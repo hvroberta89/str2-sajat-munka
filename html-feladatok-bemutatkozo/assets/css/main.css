@@ -116,7 +116,7 @@
 /*--Style the body--*/
 body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-image: url("/images/pattern_2.jpg");
+    background-image: url("../../images/pattern_2.jpg");
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
@@ -124,7 +124,7 @@ body {
 }
 
 #portrait {
-    background-image: url("/images/portrait_3.jpg");
+    background-image: url("../../images/portrait_3.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
 }
