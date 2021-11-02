@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://kit.fontawesome.com/011647a95d.js" crossorigin="anonymous"></script>
+    <title>TIC TAC TOE</title>
+</head>
+<body>
+    <div class="grid-container">          
+        <header class="header header__box">
+            <h1>TIC-TAC-TOE</h1>
+        </header>
+        <div class="select-box main__box">
+            <div class="content">
+                <div class="title"> Milyen jel legyen a kezdő?</div>
+                <div class="options">
+                    <button class="playerX">X</button>
+                    <button class="playerO">O</button>
+                </div>
+            </div>
+        </div>
+        <div class="game-box main__box">                       
+            <table class="gameArea">
+                <tr class="row">
+                    <td class= "col"></td>
+                    <td class= "col"></td>
+                    <td class= "col"></td>              
+                </tr>
+                <tr class="row">
+                    <td class= "col"></td>
+                    <td class= "col"></td>
+                    <td class= "col"></td>               
+                </tr>
+                <tr class="row">
+                    <td class= "col"></td>
+                    <td class= "col"></td>
+                    <td class= "col"></td>              
+                </tr>
+            </table>
+        </div>
+
+        <div class="winner-box main__box">
+            <div class="title"> Győztes játékos:  <span></span></div>
+            <button class="newGame">Új játék</button>        
+        </div>
+
+        <div class=side__box>
+            <div class="next-X">
+                x
+            </div>
+            <div class="next-O">
+                o
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
