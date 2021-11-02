@@ -15,8 +15,8 @@ body {
   width:100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 50vw 1fr;
-  grid-template-rows: 1fr 50vw 1fr;
+  grid-template-columns: 1fr 400px 1fr;
+  grid-template-rows: 1fr 400px 1fr;
   grid-gap: 20px;
   align-items: center;
 }
