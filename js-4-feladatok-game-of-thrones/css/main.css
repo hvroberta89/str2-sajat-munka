@@ -56,13 +56,35 @@ body {
     width: 50%;
 }
 
+.music__box {
+    width: 50px;
+    background: rgb(255, 255, 255);
+    height: 50px;
+    border-radius: 40px;
+    padding: 5px;
+}
+
+.mute__button {
+    color: rgb(255, 255, 255);
+    float: left;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    background: rgba(55, 55, 55, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
 .got-title {
     padding-bottom: 15px;
 }
 
 .characters__other {
     width: 20%;
-    padding-top: 40px;
+    padding-top: 10px;
     background: rgb(55, 55, 55);
     font-family: GameOfThrones;
     color: white;
@@ -128,6 +150,7 @@ body {
     padding: 10px;
     border-radius: 50%;
     background: rgba(55, 55, 55, 0.8);
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,11 +182,11 @@ body {
         width: 30%;
     }
     .character {
-        padding: 10px 10px;
+        padding: 5px 5px;
         font-size: 0.5em;
     }
     .portrait {
-        width: 70%;
+        width: 90%;
     }
     .character__bio {
         padding: 5px 5px 5px 20px;
@@ -179,11 +202,11 @@ body {
         width: 35%;
     }
     .character {
-        padding: 5px 5px;
+        padding: 2px 2px;
         font-size: 0.3em;
     }
     .portrait {
-        width: 80%;
+        width: 90%;
     }
     .character__bio {
         padding: 5px 2px 5px 15px;

@@ -90,12 +90,11 @@ const loadInfo=(characterName) => {
     } else {
         houseCharacterInfoBox.classList.add('hide');
     }
-    bioCharacterInfoBox.innerHTML = clickedCharacterName[0].bio;    
+    bioCharacterInfoBox.innerHTML = clickedCharacterName[0].bio; 
 }
 
 const handleSearchRequest = () => {
-    let inputField = document.querySelector('.search__input').value;
-    
+    let inputField = document.querySelector('.search__input').value;    
     loadInfo(inputField);
 }
 
