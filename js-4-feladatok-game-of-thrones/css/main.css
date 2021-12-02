@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Playfair+Display&display=swap");
+@font-face {
+    font-family: GameOfThrones;
+    src: url(../assets/font/Game\ of\ Thrones.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../assets/site/mapblue.jpg");
+    background-size: cover;
+
+    font-family: "Playfair Display", serif;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.characters__box {
+    width: 80%;
+    padding-bottom: 30px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.character {
+    text-align: center;
+    width: 12%;
+    padding: 10px 15px;
+    font-family: "Marcellus", serif;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    color: rgb(158, 107, 12);
+    text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
+}
+
+.character:hover {
+    text-shadow: 1px 1px 25px rgb(158, 107, 12);
+    transform: scale(1.2);
+}
+
+.selected {
+    text-shadow: 1px 1px 5px rgb(4, 165, 26);
+    transform: scale(1.2);
+}
+
+.portrait {
+    width: 50%;
+}
+
+.got-title {
+    padding-bottom: 15px;
+}
+
+.characters__other {
+    width: 20%;
+    padding-top: 40px;
+    background: rgb(55, 55, 55);
+    font-family: GameOfThrones;
+    color: white;
+    text-align: center;
+}
+
+.character__picture {
+    width: 99%;
+    float: left;
+    padding: 10px 0 5px 25px;
+}
+
+.character__name {
+    font-family: "Marcellus", serif;
+    padding-left: 25px;
+    float: left;
+}
+
+.character__house {
+    padding-right: 5px;
+    float: right;
+    width: 30px;
+    height: 30px;
+}
+
+.character__bio {
+    display: inline-block;
+    padding: 5px 5px 5px 25px;
+    font-family: "Marcellus", serif;
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+.search__box {
+    position: fixed;
+    bottom: 15px;
+    width: 50px;
+    background: rgb(255, 255, 255);
+    height: 50px;
+    border-radius: 40px;
+    padding: 5px;
+}
+
+.search__box:hover {
+    width: 300px;
+}
+
+.search__box:hover > .search__input {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search__box:hover > .search__button {
+    background: rgb(190, 5, 5);
+    color: #f7f7f7;
+}
+
+.search__button {
+    color: rgb(255, 255, 255);
+    float: left;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    background: rgba(55, 55, 55, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.search__input {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: rgb(100, 100, 100);
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .characters__box {
+        width: 70%;
+    }
+    .characters__other {
+        width: 30%;
+    }
+    .character {
+        padding: 10px 10px;
+        font-size: 0.5em;
+    }
+    .portrait {
+        width: 70%;
+    }
+    .character__bio {
+        padding: 5px 5px 5px 20px;
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .characters__box {
+        width: 65%;
+    }
+    .characters__other {
+        width: 35%;
+    }
+    .character {
+        padding: 5px 5px;
+        font-size: 0.3em;
+    }
+    .portrait {
+        width: 80%;
+    }
+    .character__bio {
+        padding: 5px 2px 5px 15px;
+        font-size: 0.5em;
+    }
+}
