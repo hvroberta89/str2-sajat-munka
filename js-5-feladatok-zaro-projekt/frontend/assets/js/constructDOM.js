@@ -63,7 +63,7 @@ const editUserData = (editUserId) => {
     modifideValidate(editUserField);
 
     let saveBtn = editUserField.querySelector(".saveButton");
-    saveBtn.addEventListener('click', function(){
+    saveBtn.addEventListener('click', function(event){
         let userName=editUserField.querySelector(".name--value").value;
         let userEmail=editUserField.querySelector(".email--value").value;
         let userAddress=editUserField.querySelector(".address--value").value;
@@ -85,6 +85,7 @@ const editUserData = (editUserId) => {
             createMsgt("warning");
         }
 
+        event.preventDefault();
     })
 
     let undoBtn = editUserField.querySelector(".undoButton");
@@ -134,7 +135,7 @@ const deleteClickListener = () => {
 const createClickListener =() => {
     createValidate();
     let createNewUserBtn = document.querySelector("#create-User");
-    createNewUserBtn.addEventListener('click', function(){
+    createNewUserBtn.addEventListener('click', function(event){
         let newName = document.querySelector("#name").value;
         let newEmail = document.querySelector("#email").value;
         let newAddress = document.querySelector("#address").value;
@@ -149,6 +150,7 @@ const createClickListener =() => {
         }else{
             createMsgt("warning");
         }
+        event.preventDefault();
     });
 }
 
