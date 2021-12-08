@@ -94,7 +94,8 @@ const loadInfo=(characterName) => {
 }
 
 const handleSearchRequest = () => {
-    let inputField = document.querySelector('.search__input').value;    
+    let inputField = document.querySelector('.search__input').value;  
+
     loadInfo(inputField);
 }
 
@@ -105,7 +106,7 @@ const initialize = () => {
     searchInput.addEventListener('keyup', ({ key }) => {
         console.log(key);
         if (key === "Enter") {
-            handleSearchRequest();
+            handleSearchRequest.preventDefault();
         }
     })
 }

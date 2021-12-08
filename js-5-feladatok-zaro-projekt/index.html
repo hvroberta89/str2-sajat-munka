@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/alert.css">
+    <script src="https://kit.fontawesome.com/2d7fb62f43.js" crossorigin="anonymous"></script>
+    <title>CRUD</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Users</h1>
+    </header>
+    <main class = "container">
+        <section class="form">
+            <h2 class="title__newUser">New user</h2>
+            <form id="form">
+                <input id="name" class="new-user__input" placeholder="Name">
+                <input id="email" class="new-user__input" placeholder="Email">
+                <input id="address" class="new-user__input" placeholder="Address">
+                <button type="submit" id="create-User">
+                    <i class="fas fa-user-plus"></i>
+                </button>
+                <span class="hide"></span>
+            </form>
+        </section>
+        <table class = "user__table">
+            <thead class = "user__table-head">
+                <tr>
+                    <th>Nr</th>
+                    <th>Name</th>
+                    <th>Email Address</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody class = "user__table-body">                              
+            </tbody>
+        </table>
+    </main>
+
+    <section class="alerts">
+        <div id="myAlert-1" class="alert-content hide">
+            <span class="close">&times;</span>
+            <p>Invalid Email format</p>
+        </div>          
+    </section>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>
