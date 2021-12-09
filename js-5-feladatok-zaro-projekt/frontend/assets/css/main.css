@@ -116,3 +116,6 @@ span {
     font-family: "Architects Daughter", cursive;
     font-size: 0.8em;
 }
+
+@media screen and (max-width: 600px) {
+}
