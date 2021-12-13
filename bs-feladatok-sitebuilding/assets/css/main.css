@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap");
+
+/* //címsorok és menü
+//font-family: 'Catamaran', 'Helvetica', 'Arial', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap");
+
+//Gombok, felső menü linkek
+//font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+
+//bekezdések, footer
+//font-family: 'Mulish','Helvetica', 'Arial', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap"); */
+html {
+    scroll-behavior: smooth;
+}
+
+.own-header-bg {
+    background-image: url("../img/bg-pattern.png"),
+        linear-gradient(to right, rgb(218, 36, 48), rgb(124, 66, 150));
+}
+
+.own-brand-link {
+    color: rgb(254, 203, 78);
+    font-family: "Catamaran", "Helvetica", "Arial", sans-serif;
+}
+.own-nav-link {
+    color: rgb(222, 190, 227);
+    font-family: "Lato", "Helvetica", "Arial", sans-serif;
+    font-size: 0.8em;
+}
+
+.own-brand-link:hover,
+.own-nav-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+.own-paragraph {
+    font-family: "Mulish", "Helvetica", "Arial", sans-serif;
+    font-size: 1.6em;
+}
+
+.own-btn {
+    border-radius: 99px;
+    font-size: 0.5em;
+    font-family: "Lato", "Helvetica", "Arial", sans-serif;
+}
+
+.own-btn:hover {
+    background-color: #fdcc52;
+}
+
+.own-download {
+    background-color: rgb(254, 203, 78);
+}
