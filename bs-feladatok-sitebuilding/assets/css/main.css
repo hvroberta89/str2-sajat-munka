@@ -2,56 +2,204 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap");
 
-/* //címsorok és menü
-//font-family: 'Catamaran', 'Helvetica', 'Arial', sans-serif;
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap");
+:root {
+    --head_menu_font-family: 'Catamaran', 'Helvetica', 'Arial', sans-serif;
+    --button-text_top-menu-links_font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+    --paragraphs_font-family: 'Mulish','Helvetica', 'Arial', sans-serif;
+    --footer_font-family: 'Mulish','Helvetica', 'Arial', sans-serif;
+    --bs_bg_color-yellow: rgb(255,201,70);
+    --yellow: #fdcc52;
+    --black: rgb(75,75,75);
+    --footer-text_color: rgb(102,102,103);
+}
 
-//Gombok, felső menü linkek
-//font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
-
-//bekezdések, footer
-//font-family: 'Mulish','Helvetica', 'Arial', sans-serif;
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap"); */
 html {
     scroll-behavior: smooth;
 }
 
+/* ---HEADER--- */
+
+.navbar{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
 .own-header-bg {
     background-image: url("../img/bg-pattern.png"),
         linear-gradient(to right, rgb(218, 36, 48), rgb(124, 66, 150));
 }
-
-.own-brand-link {
-    color: rgb(254, 203, 78);
-    font-family: "Catamaran", "Helvetica", "Arial", sans-serif;
+.navbar-bg_scrolling{
+    background-color: white;
 }
-.own-nav-link {
-    color: rgb(222, 190, 227);
-    font-family: "Lato", "Helvetica", "Arial", sans-serif;
-    font-size: 0.8em;
+.own-navbar-brand {
+    color: var(--bs_bg_color-yellow);
+    font-family: var(--head_menu_font-family);
+    text-decoration: none;
 }
-
-.own-brand-link:hover,
-.own-nav-link:hover {
-    color: rgb(255, 255, 255);
+.own-navbar-brand:hover {
+    color: white;
+    text-decoration: none;
 }
-
-.own-paragraph {
-    font-family: "Mulish", "Helvetica", "Arial", sans-serif;
-    font-size: 1.6em;
+.own-navbar-brand_scrolling{
+    color: var(--black);
+    font-family: var(--head_menu_font-family);
+    text-decoration: none;
 }
-
-.own-btn {
+.own-navbar-brand_scrolling:hover{
+    color: var(--yellow);
+    text-decoration: none;
+}
+.own-nav-link{
+    color: rgb(217,196,215);
+    font-family: var(--head_menu_font-family);
+    text-decoration: none;
+}
+.own-nav-link:hover{
+    color: white;
+    text-decoration: none;
+}
+.own-nav-link_scrolling{
+    color: var(--black);
+    font-family: var(--head_menu_font-family);
+    text-decoration: none;
+}
+.own-nav-link_scrolling:hover{
+    color:var(--yellow);
+}
+.own-paragraph{
+    font-family: var(--paragraphs_font-family);
+    color: white;
+    font-weight: 300;
+}
+.own-application-picture{
+    position:relative;  
+    width:100%;
+}
+.own-mobile{
+    width:100%;
+}
+.own-screenshot{
+    position: absolute;
+    width: 80%;
+    left: 9%;
+    top: 10%;
+    border-radius: 1%;
+}
+.own-buttons{
+    background-color: transparent;
+    border-color: white;
     border-radius: 99px;
-    font-size: 0.5em;
-    font-family: "Lato", "Helvetica", "Arial", sans-serif;
+    border-width: 1px;    
+    color:white;
+    font-family: var(--button-text_top-menu-links_font-family);
+    font-size: .6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
 }
-
-.own-btn:hover {
-    background-color: #fdcc52;
+.own-buttons:hover, 
+.own-buttons:active{
+    background-color: var(--bs_bg_color-yellow);
+    border-color: var(--yellow);
 }
-
-.own-download {
-    background-color: rgb(254, 203, 78);
+.own-download-container{
+    background-color: var(--bs_bg_color-yellow);
+}
+.own-download-header{
+    font-family: var(--head_menu_font-family);
+    font-weight: 300;
+}
+.own-features-header{
+    font-family: var(--head_menu_font-family);
+    font-weight: 300;
+}
+.own-features-paragraph{
+    font-family: var(--paragraphs_font-family);
+    font-weight: 300;
+}
+.own-features-container{
+    background-color: white;
+}
+.own-icons{
+    font-size: 5rem;
+    color: rgb(169,55,92);
+    background-color: transparent;
+}
+.own-stop-container{
+    background: url("../img/bg-cta.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: relative;
+}
+.own-stop-filter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    top: 0;
+}
+.own-stop-header{
+    font-family: var(--head_menu_font-family);
+    font-weight: 200;
+    color: white;
+}
+.own-contact-container{
+    background-color: var(--bs_bg_color-yellow);
+}
+.own-contact-header{
+    font-family: var(--head_menu_font-family);
+    font-weight: 200;
+}
+.own-twitter-icon{
+    background-color: rgba(28,161,242,0.9);
+    color: white;
+    padding:1rem;
+}
+.own-twitter-icon:hover{
+    background-color: rgba(28,161,242,1);
+}
+.own-facebook-icon{
+    background-color: rgba(58,89,152,0.9);
+    color: white;
+    padding:1rem 1.2rem;
+}
+.own-facebook-icon:hover{
+    background-color: rgba(58,89,152,1);
+}
+.own-google-icon{
+    background-color: rgba(220,77,57,0.9);
+    color: white;
+    padding:1rem 0.9rem;
+}
+.own-google-icon:hover{
+    background-color: rgba(220,77,57,1);
+}
+.own-footer-text{
+    color:var(--footer-text_color);
+}
+.own-privacy{
+    color:var(--footer-text_color);
+    text-decoration: none;
+}
+.own-privacy:hover{
+    color:var(--yellow);
+    text-decoration: none;
+}
+.own-terms{
+    color:var(--footer-text_color);
+    text-decoration: none;
+}
+.own-terms:hover{
+    color:var(--yellow);
+    text-decoration: none;
+}
+.own-faq{
+    color:var(--footer-text_color);
+    text-decoration: none;
+}
+.own-faq:hover{
+    color:var(--yellow);
+    text-decoration: none;
 }
