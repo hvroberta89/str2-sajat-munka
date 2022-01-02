@@ -2,19 +2,10 @@ const navbar=document.querySelector("#navbar"),
     navbarBrand = document.querySelector("#navbar-brand"),
     navbarLinks = document.querySelector(".navbar-nav");
 
-    console.log(navbarLinks.children[1].classList);
-// document.addEventListener('scroll', function() {
-// if (window.scrollY>0){
-//     navbarBrand.classList.remove("own-navbar-brand");
-//     navbarBrand.classList.add("own-navbar-brand_scrolling");
-// } else {
-
-// }
-// });
 window.onscroll = function() {scrolling()};
 
 function scrolling() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 50) {
     navbar.classList.remove("navbar-dark");
     navbar.classList.add("navbar-bg_scrolling");
     navbarBrand.classList.remove("own-navbar-brand");
