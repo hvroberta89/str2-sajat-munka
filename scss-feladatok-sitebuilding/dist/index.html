@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2d7fb62f43.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://kit.fontawesome.com/011647a95d.js" crossorigin="anonymous"></script>
+    <title>SiteBuilding</title>
+</head>
+<body>
+  <header class="header">
+    <div class="overlay fade-out has-fade" id="overlay"></div>
+    <nav class="navbar-expand-lg navbar base-colors flex flex-jc-sb flex-ai-c">
+      <a class="header__brand base-colors" href="#top">Start Bootstrap</a>
+      <button class="header__menu hide-for-desktop flex flex-direct-r flex-ai-c" id="btnMenu">
+        <p class="" id="textMenu">Menu</p>
+        <div class="header__menu__spans" id="spansMenu" >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>      
+      <div class="header__links base-colors hide-for-mobile">
+        <a class="" href="#download">Download</a>
+        <a class="" href="#features">Features</a>
+        <a class="" href="#contact">Contact</a>
+      </div>  
+    </nav>
+    <div class="header__menu__links flex flex-direct-c fade-out has-fade" id="linksMenu">
+      <a class="" href="#download">Download</a>
+      <a class="" href="#features">Features</a>
+      <a class="" href="#contact">Contact</a>
+    </div> 
+    
+    <section class="col-10 col-lg-7 newApp center-x flex flex-jc-sb">
+      <article class="newApp__text">
+        <h1>  New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!
+        </h1>
+        <footer>
+          <a href="#" class="button">Start now for free!</a>
+        </footer>
+      </article>
+      <section class="newApp__image">  
+        <img src="./img/phone.png" alt="Phone" class="newApp__image__mobile">
+        <img src="./img/demo-screen-1.jpg" alt="Screenshot" class="newApp__image__screenshot">
+      </section>
+    </section>
+  </header>
+  <main>
+    <section class="download" id="download">
+      <article class="col-lg-5 center-x  container">
+        <h2 class="download__head">
+          Discover what all the buzz is about!
+        </h2>
+        <p class="download__text">Our app is available on any mobile device! Download now to get started!</p>
+        <section class="download__stores">
+          <a href="https://play.google.com/" class="">
+            <img src="./img/google-play-badge.svg"  alt="Google Play" width="150px">
+          </a> 
+          <a href="https://www.apple.com/hu/app-store/" class="  ">
+            <img src="./img/app-store-badge.svg" alt="App Store" width="150px">
+          </a> 
+      </article>
+    </section>
+
+    <section class="features" id="features">
+      <div class="col-10 col-lg-8  container center-x">
+        <section class=" features__text center-x">
+          <h2 class="features__text__header">
+            Unlimited Features, Unlimited Fun
+          </h2>
+          <p>Check out what you can do with this app theme!</p>
+          <span></span>
+        </section>
+        <section class="features__media flex flex-direct-r">
+          <div class="col-10 col-lg-4 features__media__image">
+            <img src="./img/phone.png" alt="Phone" class="features__media__image__mobile">
+            <img src="./img/demo-screen-1.jpg" alt="Screenshot" class="features__media__image__screenshot">
+          </div>
+          <div class="col-10 col-lg-8">
+            <div class="features__media__properties">
+              <div class="col-lg-6 features__media__property">  
+                <span class="iconify" data-icon="octicon:device-mobile-24"></span>               
+                <h3>Device Mockups</h3>
+                <p>Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+              </div>
+              <div class="col-lg-6 features__media__property">
+                <span class="iconify" data-icon="carbon:camera"></span>
+                <h3>Flexible Use</h3>
+                <p>Put an image, video, animation, or anything else in the screen!</p>
+              </div>
+            </div>     
+            <div class="features__media__properties">
+              <div class="col-lg-6 features__media__property"> 
+                <span class="iconify" data-icon="simple-line-icons:present"></span>                 
+                <h3>Free to Use</h3>
+                <p>As always, this theme is free to download and use for any purpose!</p>
+              </div>
+              <div class="col-lg-6 features__media__property">
+                <span class="iconify" data-icon="bx:bx-lock-open"></span>
+                <h3>Open Source</h3>
+                <p>Since this theme is MIT licensed, you can use it commercially!</p>
+              </div>
+            </div>
+          </div>                 
+        </section>
+      </div>
+    </section>
+
+    <section class="stop">
+      <div class="stop__filter">
+      </div>
+      <div class="stop__text">
+        <h2 class="stop__text__header">
+          Stop waiting.<br>
+          Start building.
+        </h2>
+        <a href="#" class="button">Let's get started!</a>       
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__container">
+        <h1 class="contact__header">We <span class="iconify" data-icon="ant-design:heart-filled"></span> new friends!</h1>
+        <div class="contact__logos flex flex-direct-r flex-jc-c">
+          <a href="https://twitter.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Twitter">
+            <div class="contact__twitter">
+              <i class="fab fa-twitter"></i>
+            </div>
+          </a>
+          <a href="https://facebook.com" target="_blank" data-toggle="tooltip" data-placement="bottom"
+              title="Facebook">
+            <div class="contact__facebook">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+          </a>
+          <a href="https://gmail.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Gmail">
+            <div class="contact__google">
+              <i class="fab fa-google-plus-g"></i>
+            </div>
+          </a>
+        </div>
+      </div>        
+    </section>   
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">
+      &copy Your Website 2018. All Rights Reserved.
+    </p>
+    <div class="footer__links">
+      <a class="footer__link" href="" data-toggle="modal" data-target="#privacyModal">Privacy</a>
+      <a class="footer__link" href="" data-toggle="modal" data-target="#termsModal">Terms</a>
+      <a class="footer__link" href="" data-toggle="modal" data-target="#faqModal">FAQ</a>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="privacyModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="privacyModalLabel">Privacy</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae blanditiis quidem eligendi in soluta molestiae dolorum praesentium dolor, ipsa aut.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="termsModalLabel">Terms</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae blanditiis quidem eligendi in soluta molestiae dolorum praesentium dolor, ipsa aut.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="faqModal" tabindex="-1" role="dialog" aria-labelledby="faqModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="faqModalLabel">FAQ</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae blanditiis quidem eligendi in soluta molestiae dolorum praesentium dolor, ipsa aut.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+crossorigin="anonymous"></script>
+<script src="./assets/js/main.js"></script>
+
+</body>
+</html>

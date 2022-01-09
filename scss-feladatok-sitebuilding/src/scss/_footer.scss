@@ -1,0 +1,25 @@
+.footer{
+    text-align: center;
+    background-color: $menu_black;
+
+    &__text{
+        color: $footer-text_color;
+        font-family: $footer_font;
+        font-size: $font-xs;
+        padding-top: 10px;
+    }
+
+    &__links{
+        padding-bottom: 15px;
+    }
+    &__link{
+        color: $footer-text_color;
+        font-family: $footer_font;
+        font-size: $font-xs;
+        padding-left: 15px;
+
+        &:hover{
+            color: $yellow;
+        }
+    }
+}

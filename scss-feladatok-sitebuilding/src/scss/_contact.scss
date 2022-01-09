@@ -1,0 +1,48 @@
+.contact{
+    text-align: center;
+    background-color: $yellow;
+
+    &__container{
+        padding: 50px 50px;
+    }
+
+    &__header{
+        font-family: $head_menu_font;
+        font-weight: 200;
+        font-size: $font-xlg;
+
+        .iconify{
+            color: $red;
+        }
+    }
+
+    &__logos{
+        padding:20px;
+        a > div{
+            color: $white; 
+            margin: 5px;  
+            border-radius: 99px; 
+            font-size: $font-lg; 
+            opacity: 0.9;  
+            &:hover{
+                opacity: 1;
+            }   
+        }
+    }
+
+    &__twitter{
+        background-color: $twitterblue;      
+        padding: 15px 20px;    
+    }
+
+    &__facebook{
+        background-color: $facebookblue;        
+        padding: 15px 25px;             
+    }
+
+    &__google{
+        background-color: $googlered;        
+        padding: 15px 18px;             
+    }
+
+}

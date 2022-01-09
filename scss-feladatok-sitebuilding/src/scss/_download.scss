@@ -1,0 +1,30 @@
+.download{
+    text-align: center;
+    background-color: $yellow;
+
+    &__head{
+        font-family: $head_menu_font;
+        font-weight: 300;
+        font-size: $font-xxlg;
+    }
+    &__text{
+        font-family: $paragraphs_font;
+        font-size: $font-xs;
+    }
+
+    &__stores{
+        display: flex;
+        justify-content: center;
+
+        > a{
+            padding:0 5px 20px 5px;
+        }
+
+        @include breakpoint_up(large){
+            flex-direction: row;     
+        }
+        @include breakpoint_down(small){
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.stop {
+    background-image: url("../../img/bg-cta.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: relative;
+
+    &__filter{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $menu_black;
+        opacity: 0.6;
+        top: 0;
+    }
+
+    &__text{
+        position: relative;
+        @include breakpoint_up(large){
+            padding: 250px 250px;    
+        }
+        @include breakpoint_down(small){
+            padding: 200px 100px;
+        }
+        
+
+        &__header{
+            font-family: $head_menu_font;
+            font-weight: 200;
+            font-size: $font-xxlg;
+            color: $white;
+            padding-bottom: 20px;
+        }
+    }
+        
+}

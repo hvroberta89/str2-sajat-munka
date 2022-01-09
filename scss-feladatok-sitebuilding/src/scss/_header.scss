@@ -1,0 +1,228 @@
+@import "variables";
+
+.header{
+    background-image:  url($header_background),
+         linear-gradient(to right, rgb(218, 36, 48), rgb(124, 66, 150));
+ 
+    .navbar {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 9;
+        &.base-colors{
+            @include breakpoint_up(large){  
+                padding: 10px 250px;              
+                background-color: transparent;       
+            }
+            @include breakpoint_down(small){
+                padding: 10px 35px;
+                background-color: $white;       
+            }
+        }
+        &.scrolling{
+            @include breakpoint_up(large){  
+                padding: 10px 250px;              
+                background-color: $white;       
+            }
+            @include breakpoint_down(small){
+                padding: 10px 35px;
+                background-color: $white;       
+            }
+        }
+    }
+
+    &__brand {
+        font-family: $head_menu_font;
+        font-size: $font-md;
+        transition: all 0.3s ease-in-out;
+        &.base-colors{
+            @include breakpoint_up(large){
+                color:$bs_bg_color-yellow;      
+            }
+            @include breakpoint_down(small){
+                color:$menu_black;      
+            }
+        }
+        &.scrolling{
+            color:$menu_black; 
+
+            &:hover{
+                color: $yellow;
+            }
+        }
+        &:hover{
+            @include breakpoint_up(large){
+                color:$white;      
+            }
+            @include breakpoint_down(small){
+                color:$bs_bg_color-yellow;      
+            }
+        }
+    }
+
+    &__menu{
+        background-color: transparent;
+        border: 1px solid $grey;
+        border-radius: 5px;
+        padding: 5px;
+        font-family: $head_menu_font;
+        font-size: $font-xs;
+        transition: 0.3s ease-in-out;
+
+        > p{
+            margin: 0;
+
+            &.open{
+                display: none;
+            }
+        }        
+
+        &__spans >span {
+            display: block;
+            background-color: $menu_black;
+            height: 2px;
+            width: 20px;
+            margin: 2px 5px;
+            transition: all 0.3s ease-in-out;
+            transform-origin: 3px 1px;
+ 
+            &:not(:last-child){
+                margin-bottom: 3px;
+            }
+        } 
+
+        &__spans.open {
+            > span:first-child {
+                transform: rotate(45deg);
+            }
+            > span:nth-child(2) {
+                opacity: 0;
+            }
+            > span:last-child {
+                transform: rotate(-45deg);                
+            }
+        }
+        
+        &:hover{
+            box-shadow: 1px 1px 10px $grey;
+        }
+
+        &__links{
+            z-index: 10;
+            background-color: $white;
+            padding: 30px;
+            position: absolute;
+            width: 100vw;
+            transition: all 0.3s ease-in-out;
+            
+            > a {
+                display: flex;
+                justify-content: center;
+                font-family: $button_top-menu-links_font;
+                font-size: $font-lg;
+                color: $grey;
+                padding:10px;
+                transition: all 0.3s ease-in-out;
+
+                &:hover{
+                    color: $menu_black;
+                }
+            }
+        }
+    }
+
+    &__links{ 
+        &.base-colors > a{
+            color: $links-text_color;
+        }
+        &.scrolling > a{
+            color: $grey;
+
+            &:hover{
+                color: $yellow;
+            }
+        }  
+        a{
+            font-family: $button_top-menu-links_font;
+            font-size: $font-xs;
+            font-weight: 400;
+            text-transform: uppercase;               
+            cursor: pointer;
+
+            &:not(:last-child){
+                margin: 5px;
+            }
+
+            &:hover{
+                color:$white;
+            }
+        }
+    }
+}
+.overlay{
+    position: fixed;
+    z-index: 9;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-image: linear-gradient($grey,transparent);
+}
+
+.newApp{
+    padding: 50px 25px 150px 25px;
+    z-index: 0;
+    margin-top: 50px;
+
+    @include breakpoint_up(large){
+        flex-direction: row;     
+    }
+    @include breakpoint_down(small){
+        flex-direction: column;      
+    }
+
+    &__text{
+        @include breakpoint_up(large){
+            width: 50%;
+            text-align: left;     
+        }
+        @include breakpoint_down(small){
+            width: 100%;
+            text-align: center;         
+        }
+
+        > h1{
+            font-family: $head_menu_font;
+            font-size: $font-xlg;
+            font-weight: 300;
+            color: $white;
+            padding: 80px 0 30px 0;
+        }
+    }
+
+    &__image{
+        position: relative; 
+
+        @include breakpoint_up(large){
+            width: 30%;
+            text-align: right;     
+        }
+        @include breakpoint_down(small){
+            margin-top: 100px;
+            width: 50%;
+            left: 25%;         
+        }
+
+        &__mobile{
+            width: 100%;
+        }
+
+        &__screenshot{
+            position: absolute;
+            width: 90%;
+            left: 6%;
+            top:8%;
+            border-radius: 1%;
+        }
+    }
+}

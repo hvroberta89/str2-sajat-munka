@@ -1,0 +1,96 @@
+.features{
+    &__text{
+        text-align: center;
+    
+        &__header{
+            font-family: $head_menu_font;
+            font-weight: 300;
+            font-size: $font-xlg;
+        }
+
+        > p{
+            font-family: $paragraphs_font;
+            font-size: $font-sm;
+        }
+
+        > span{
+            display: block;
+            background-color: $lightgrey;
+            height: 2px;
+            width: 100px;
+            margin: 2px auto;
+            transition: all 0.3s ease-in-out;
+            transform-origin: 3px 1px;
+        }
+    }
+
+    &__media{
+        padding-top: 100px;
+
+        @include breakpoint_up(large){
+            flex-direction: row;  
+        }
+        @include breakpoint_down(small){
+            flex-direction: column;  
+        }
+
+        &__image{
+            position: relative; 
+
+            @include breakpoint_up(large){
+                width: 60%;
+                text-align: left;     
+            }
+            @include breakpoint_down(small){                
+                width: 50%;
+                text-align: center;
+                left: 18%;         
+            }
+
+            &__mobile{
+                width: 100%;
+            }
+
+            &__screenshot{
+                position: absolute;
+                width: 80%;
+                left: 10%;
+                top:9%;
+                border-radius: 1%;
+            }
+        }
+
+        &__properties{
+            text-align: center;
+            display: flex;
+            
+
+            @include breakpoint_up(large){
+                flex-direction: row; 
+                align-items: center; 
+            }
+            @include breakpoint_down(small){
+                flex-direction: column;     
+            }
+        }
+
+        &__property{
+            margin-top: 50px;
+
+            .iconify{
+                color: $salmon;
+                font-size: 75px;;
+            }
+            h3{
+                font-family: $head_menu_font;
+                font-weight: 300;
+                font-size: $font-lg;
+            }
+            p{
+                font-family: $paragraphs_font;
+                font-weight: 300;
+                font-size: $font-sm;
+            }
+        }
+    }
+}

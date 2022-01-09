@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a,  a:hover, a:visited {
+    text-decoration: none;
+}
+
+//Spacing
+.container{
+    padding: 150px 50px;
+}
+
+//Center
+.center-x{
+    margin-left:auto;
+    margin-right: auto;
+}
+
+//FLexbox
+.flex {
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+    &-direct-c{
+        flex-direction: column;
+    }
+    &-direct-r{
+        flex-direction: row;
+    }
+}
+
+// Buttons
+
+.button{
+    padding: 10px 35px;
+    border-radius: 99px;
+    border: 2px solid $white; 
+    background-color: transparent;
+    font-family: $button_top-menu-links_font;
+    font-weight: 300;
+    color: $white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:hover{
+        background-color: $yellow;
+        color:$white;
+        border-color: $yellow;
+    }
+}
+
+// Visibility
+.hide-for-mobile{
+    @include breakpoint_down(small){
+        display: none;
+    }
+}
+
+.hide-for-desktop{
+    @include breakpoint_up(large){
+        display: none;        
+    }
+}
