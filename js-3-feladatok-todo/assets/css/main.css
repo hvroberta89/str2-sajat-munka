@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    padding: 0;
+  }
+
+.container{
+    background-color: rgb(30, 240, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.todo-box{
+    border-radius: 10px; 
+    width: 80%;   
+}
+
+.todo__header{
+    border-radius: 10px 10px 0 0;
+    color: rgb(255,255,255);
+    padding: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+
+.todo__body{
+    background-color: rgba(200, 200, 200, .9);
+    border-radius: 0 0 10px 10px;
+}
+
+.todo__date{
+    color:rgb(255, 255, 255);
+    font-size: 1.5rem;
+    padding: 25px;
+}
+
+.todo__add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.todo__add input{
+    background-color: rgba(255, 255, 255, .7);
+    border-color: rgb(200, 200, 200);
+    border-radius: 5px 0 0 5px;
+    font-size: 1.2rem;
+    margin: 5px 0 5px 10px;
+    padding: 5px 10px;
+    width: 80%;
+}
+
+.todo__add .addBtn{
+    background-color: rgba(30, 240, 250, .7);
+    border-radius: 0 5px 5px 0;
+    border-width: 0;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 10px 10px 10px 0;
+    padding: 10px;
+    transition: .3s all ease-in-out;
+}
+
+.todo__add .addBtn:hover{
+    background-color: rgba(30, 240, 250, 1);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+}
+
+.todo__taskNum{
+    color: white;
+    text-align: center;
+}
+
+.todo__tasks{
+    padding: 15px 20px;
+}
+
+.todo__task{
+    cursor: pointer;
+    font-size: 18px;
+    list-style-type: none;
+    padding: 10px 8px 10px 30px;
+    position: relative;
+    transition: .3s all ease-in-out;
+}
+
+.todo__task:hover{
+    background-color: rgba(30, 240, 250, .6);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+}
+
+.todo__task.clicked{
+    background: rgb(170, 170, 170);
+    color: rgb(255, 255, 255);
+    text-decoration: line-through;
+}
+
+.todo__task i {
+    padding: 15px;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    transition: .3s all ease-in-out;
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  
+.todo__task:hover i {
+    background-color: rgba(235, 57, 33, 0.8);
+    color: white;
+    transform: scaleX(1);
+}
+
+.todo_clearAll {
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    transition: .3s all ease-in-out;
+}
+
+.todo_clearAll:hover {
+    color: black;
+}
+
+  
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    .todo-box{ 
+        width: 40%;   
+    }
+}
+@media screen and (min-width: 901px) {
+    .todo-box{ 
+        width: 30%;   
+    }
+}

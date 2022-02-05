@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://kit.fontawesome.com/011647a95d.js" crossorigin="anonymous"></script>
+    <title>To-Do-List</title>
+</head>
+<body>
+    <main class="container">
+        <div class="todo-box">
+            <h1 class="todo__header">
+               My ToDo List 
+            </h1>
+            <div class="todo__body">
+                <div class="todo__date">
+                    <p id="dayId">Monday</p>
+                    <p id="dateId">01-01-2000</p>
+                </div>
+                <div class="todo__add">
+                    <input type="text" id="newTaskId" placeholder="Take the garbage out">
+                    <button class="addBtn">Add</button>
+                </div>
+                <div class="todo__taskNum">
+                    <p>You have <span>0</span> pending items</p>
+                </div>
+                <div class="todo__tasks">
+                    <ul id="todo__list">
+                    </ul>
+                </div>
+                <footer class="todo_clearAll">
+                    clear all
+                </footer>
+            </div>
+        </div>
+    </main>
+
+    <script type="module">
+        import "./assets/js/main.js";
+    </script>
+    
+</body>
+</html>
